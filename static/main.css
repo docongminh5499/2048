@@ -17,6 +17,7 @@ body
 	width: 500px;
 	height: 545px;
 	background-color: wheat;
+	border-radius: 15px;
 }
 
 #header
