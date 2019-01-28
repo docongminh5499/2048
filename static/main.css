@@ -12,10 +12,21 @@
 	font-family: Catesque, Arial, sans-serif;
 }
 
+html
+{
+	height: 100%;
+	width: 100%;
+}
 
 body
 {
+	min-height: 100%;
+	min-width: 100%;
+	
 	background-color: #FAF8EF;
+	position: relative;
+	
+
 }
 
 
@@ -23,13 +34,158 @@ body
 {
 	width: 96%;
 	height: 96%;
-	
-	margin: 1% 3%;
-	overflow: both;
-	
-		
 	min-height: 610px;
 	min-width: 1255px;
+	overflow: both;
+	
+	margin: 1% 3%;
+	margin-bottom: 0px;
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+}
+
+
+#confirm
+{
+	height: 100%;
+	width: 100%;
+	min-height: 610px;
+	min-width: 1255px;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	
+	background-color: black;
+	opacity: 0.7;
+	display: none;
+}
+
+
+#confirm #changemode p
+{
+		padding: 15px;
+}
+
+
+
+#confirm #changemode
+{
+	color: white;
+	font-size: 40px;
+	margin: 5% 0px;
+	text-align: center;
+}
+
+
+
+#confirm #button
+{
+	width: 30%;
+	padding: 10px;
+	font-size: 40px;
+	border-radius: 15px;
+	outline: none;
+}
+
+
+
+#confirm_new
+{
+	height: 100%;
+	width: 100%;
+	min-height: 610px;
+	min-width: 1255px;
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	
+	background-color: black;
+	opacity: 0.7;
+	display: none;
+}
+
+
+#confirm_new #new p
+{
+		padding: 15px;
+}
+
+
+#confirm_new #new
+{
+	color: white;
+	font-size: 40px;
+	margin: 5% 0px;
+	text-align: center;
+}
+
+#confirm_new #button
+{
+	width: 30%;
+	padding: 10px;
+	font-size: 40px;
+	border-radius: 15px;
+	outline: none;
+}
+
+
+#end_game
+{
+	height: 100%;
+	width: 100%;
+	min-height: 610px;
+	min-width: 1255px;
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	
+	background-color: black;
+	opacity: 0.8;
+	
+	display: none;
+}
+
+
+#end_game #end
+{
+	color: white;
+	font-size: 40px;
+	margin: 5% 0px;
+	text-align: center;
+}
+
+#end_game #title
+{
+	font-size: 65px;
+	margin-top: 10%;
+}
+
+
+#end_game #new_score
+{
+	margin: 40px;
+}
+
+
+#end_game input
+{
+	padding: 10px;
+	width: 300px;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+
+#end_game #Ok
+{
+	width: 10%;
+	margin: 0px 45%;
 }
 
 
@@ -37,7 +193,10 @@ body
 {
 	width: 25%;
 	height: 100%;
-	min-height: 610px;
+	min-height: 620px;
+	max-height: 800px;
+	max-width: 500px;
+	
 	background-color: wheat;
 	border-radius: 15px;
 	float: left;
@@ -69,7 +228,7 @@ body
 #info
 {
 	width: 95%;
-	height: 100%;
+	height: 80%;
 	margin: auto;
 }
 
@@ -78,7 +237,7 @@ body
 #score div
 {
 	width: 70%;
-	height: 70px;
+	height: 12%;
 	background-color: #BAAEA0;
 	
 	font-size: 14pt;
@@ -146,6 +305,8 @@ body
 
 #playmode
 {
+	height: 25%;
+	width: 90%;
 	border: 4px solid white;
 	border-radius: 15px;
 	overflow: both;
@@ -184,8 +345,8 @@ body
 	width: 50%%;
 	float: left;
 	
-	min-height: 610px;
-	min-width: 610px;
+	min-height: 620px;
+	min-width: 620px;
 }
 
 
@@ -193,7 +354,11 @@ body
 {
 	height: 96%;
 	width: 96%;
-	margin: 0.5%;
+	min-height: 590px;
+	min-width: 590px;
+	max-height: 610px;
+	max-width: 610px;
+	
 	background-color: #CCC0B3;
 	border-radius: 10px;
 	border: 10px solid #BBADA0;
@@ -204,9 +369,11 @@ body
 {
 	width: 25%;
 	height: 100%;
-	min-width: 220px;
-	min-height: 610px;
-	margin-left: 1px;
+	
+	min-height: 620px;
+	max-width: 500px;
+	max-height: 800px;
+	
 	background-color: wheat;
 	border-radius: 15px;
 	float:left;
@@ -250,7 +417,10 @@ body
 	background-color: black;
 }
 
-
+#tab1, #tab2
+{
+	height: 75%;
+}
 
 .wrapper
 {
@@ -258,8 +428,10 @@ body
 	border-radius: 15px;
 	background-color: #CDD1D2;
 		
-	min-height: 420px;
 	width: 90%;
+	height: 85%;
+	
+	min-height: 420px;
 	margin: 0px auto;
 }
 

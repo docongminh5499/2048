@@ -440,17 +440,16 @@ function EndGame()
 
 function endGameProcessing()
 {
+	$("#end_game").css("display", "block");
+	document.getElementById("new_score").innerHTML = "YOUR SCORE: " +  document.getElementById("mine").innerHTML;
 	
 	
 	// Unbound listener
 	// Hien thi form nhap ten
 	// Cap nhat vao leaderBoard => ten ms vs mau khac 
 	
-	
-	
-	
-	console.log("End game");
 }
+
 
 
 function loadLeaderBoard()
@@ -479,8 +478,15 @@ function start()
 $("#mode4").click(function(){
 	if (nums !== 4)
 		{
-			nums = 4;
-			start();
+			$("#confirm").css("display", "block");
+			$("#yes").click(function(){
+				nums = 4;
+				$("#confirm").css("display", "none");
+				start();
+			});
+			$("#cancel").click(function(){
+				$("#confirm").css("display", "none");
+			});
 		}
 });
 
@@ -489,8 +495,15 @@ $("#mode4").click(function(){
 $("#mode8").click(function(){
 	if (nums !== 8)
 		{
-			nums = 8;
-			start();
+			$("#confirm").css("display", "block");
+			$("#yes").click(function(){
+				nums = 8;
+				$("#confirm").css("display", "none");
+				start();
+			});
+			$("#cancel").click(function(){
+				$("#confirm").css("display", "none");
+			});
 		}
 });
 
@@ -499,13 +512,14 @@ $("#mode8").click(function(){
 
 
 $("#replay").click(function(){
-	
-	
-	// Hien thị thong bao confirm
-	
-	
-	//////
-	start();
+	$("#confirm_new").css("display", "block");
+	$("#yes_new").click(function(){
+			$("#confirm_new").css("display", "none");
+			start();
+	});
+	$("#cancel_new").click(function(){
+			$("#confirm_new").css("display", "none");
+	});
 });
 
 
