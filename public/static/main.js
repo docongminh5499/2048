@@ -377,7 +377,7 @@ function loadLeaderBoard() {
   const request = new XMLHttpRequest();
   const request8 = new XMLHttpRequest();
 
-  request.open('GET', 'https://docongminh5499-game-2048.herokuapp.com/api/get-leader-board/4');
+  request.open('GET', '/api/get-leader-board/4');
   request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       JSON.parse(request.responseText).forEach(item => {
@@ -400,7 +400,7 @@ function loadLeaderBoard() {
   };
   request.send();
 
-  request8.open('GET', 'https://docongminh5499-game-2048.herokuapp.com/api/get-leader-board/8');
+  request8.open('GET', '/api/get-leader-board/8');
   request8.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       JSON.parse(request8.responseText).forEach(item => {
