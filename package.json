@@ -4,7 +4,7 @@
   "description": "This is a simple version of game 2048",
   "main": "app.js",
   "scripts": {
-    "start": "npx pm2 start app.js --watch"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
